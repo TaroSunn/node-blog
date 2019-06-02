@@ -4,7 +4,7 @@ const env = process.env.NODE_ENV
 // 配置
 let MYSQL_CONF
 
-if(evn === 'dev') {
+if(env === 'dev') {
   MYSQL_CONF = {
     host: 'localhost',
     user: 'root',
@@ -14,7 +14,7 @@ if(evn === 'dev') {
   }
 }
 
-if (evn === 'production') {
+if (env === 'production') {
   MYSQL_CONF = {
     host: 'localhost',
     user: 'root',
